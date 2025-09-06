@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ryan Babu | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="signup.html">Signup</a>
+    <a href="about.html">About Me</a>
+    <a href="gallery.html">My Gallery</a>
+    <a href="contact.html">Contact Me</a>
+  </nav>
+
+  <!-- Sliding Banner -->
+  <div class="banner">
+    <div class="slides">
+      <img src="images/craig mullins crossing_10_31.jpg" alt="Banner 1">
+      <img src="images/craigmullins.jpg" alt="Banner 2">
+      <img src="images/Cartoon-Studio-Ghibli-Backgrounds.jpg" alt="Banner 3">
+      <img src="images/craig mullins crossing_10_31.jpg" alt="Banner 1 repeat">
+    </div>
+  </div>
+
+  <!-- Welcome -->
+  <div class="section fade-in">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm <strong>Ryan Babu</strong>, a B-Tech Computer Science student at SJCET Palai. Skilled in Python, Flutter, and Computer Vision based applications. Passionate about AI, ML, and real-world solutions.</p>
+  </div>
+
+  <!-- Skills -->
+  <div class="section fade-in">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill-badge">Python</span>
+      <span class="skill-badge">Flutter</span>
+      <span class="skill-badge">IoT</span>
+      <span class="skill-badge">AI</span>
+      <span class="skill-badge">Computer Vision</span>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="section fade-in">
+    <h2>Project: Strive Fit</h2>
+    <p><strong>Description:</strong> A gym management system with workout sessions, membership tracking, and live posture correction. Developed with Binil Mathew, Nikhil Dai, and Christin Binoy.</p>
+    <p><strong>Technologies:</strong> Dart, Flutter, Python, Flask</p>
+    <p>
+      <a href="https://github.com/ryanbabu114/Project_StriveFit" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" style="height:20px; vertical-align:middle;">
+        View on GitHub
+      </a>
+    </p>
+  </div>
+
+  <!-- Certificates -->
+  <div class="section fade-in">
+    <h2>Certificates</h2>
+    <div class="cert-grid">
+      <a href="certificates/linux certificate.pdf" target="_blank"><img src="certificates/linux.png" alt="Linux"></a>
+      <a href="certificates/java infosys certificate.pdf" target="_blank"><img src="certificates/java.png" alt="Java"></a>
+      <a href="certificates/aibootcamp.pdf" target="_blank"><img src="certificates/aibootcamp.png" alt="AI Bootcamp"></a>
+      <a href="certificates/asthra_certificateS6_compressed.pdf" target="_blank"><img src="certificates/asthra.png" alt="Asthra"></a>
+      <a href="certificates/software engg mooc.pdf" target="_blank"><img src="certificates/softengg.png" alt="Software Engg"></a>
+      <a href="certificates/RED HAT CERTIFICATE Workshop 25 March 2025_Click here to downlad your particiaption certificate.pdf" target="_blank"><img src="certificates/reddhat.png" alt="Red Hat"></a>
+    </div>
+  </div>
+
+  <!-- Internship -->
+  <div class="section fade-in">
+    <h2>Internship</h2>
+    <p>📜 Advance Ethical Hacking and Cyber Defense (TECHMAGHI)</p>
+    <a href="certificates/Ryan_internship.pdf" target="_blank">
+      <img src="certificates/intern.png" alt="Internship" style="width:220px; border-radius:12px;">
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>📍 Ramapuram (686576), Kottayam, Kerala</p>
+    <p>
+      <a href="https://www.linkedin.com/in/ryan-babu-a3a6a8259/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/ryanbabu114" target="_blank">GitHub</a> |
+      <a href="mailto:ryanbabu24@gmail.com">Email</a>
+    </p>
+    <p>© 2025 Ryan Babu. All rights reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top">↑</button>
+
+  <!-- Scripts -->
+  <script>
+    // Scroll Reveal
+    const sections = document.querySelectorAll('.section');
+    window.addEventListener('scroll', () => {
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < window.innerHeight - 100) {
+          section.classList.add('show');
+        }
+      });
+    });
+
+    // Back to Top Button
+    const backToTop = document.getElementById("back-to-top");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    });
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
